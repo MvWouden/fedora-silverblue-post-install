@@ -80,7 +80,7 @@ If not enabled yet, run:
 ```bash
 rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm # free packages
 rpm-ostree install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm # non-free packages
-systemctl reboot #to use new deployment image
+systemctl reboot # to use new deployment image
 ```
 
 ### NVIDIA driver installation (with CUDA)
@@ -90,14 +90,14 @@ systemctl reboot #to use new deployment image
 rpm-ostree install akmod-nvidia xorg-x11-drv-nvidia # NVIDIA
 rpm-ostree install xorg-x11-drv-nvidia-CUDA # CUDA
 rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1 # Blacklist nouveau driver
-systemctl reboot #to use new deployment image
+systemctl reboot # to use new deployment image
 ```
 
 ### Other packages
 
 ```bash
 rpm-ostree install ulauncher neofetch lm_sensors dkms mscore-fonts-all gnome-tweaks
-systemctl reboot #to use new deployment image
+systemctl reboot # to use new deployment image
 ```
 
 > **Note:** To enable ULauncher short-cut to be `Super + /`, add a custom keyboard shortcut for command `ulauncher-toggle` in GNOME settings.
@@ -111,7 +111,7 @@ To install the Fish shell and make it the default shell, run:
 ```bash
 rpm-ostree install fish
 sudo lchsh $USER # to /bin/fish
-systemctl reboot #to use new deployment image
+systemctl reboot # to use new deployment image
 ```
 
 To install custom plugins (using Fisher), run:
