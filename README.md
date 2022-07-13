@@ -39,7 +39,7 @@ To be genenerated...
 
 ## Installing Gnome Extensions
 
-### Adding aliases
+## Adding aliases
 
 ## Adding GPG- and SSH-key to GitHub
 
