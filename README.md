@@ -7,7 +7,28 @@ A Fedora Silverblue (36) post installation guide.
 This repository was created to keep track of the installation and configuration steps (personally) required after a clean installation of Fedora Silverblue.
 
 ## Index
-To be genenerated...
+- [Updating the system](#updating-the-system)
+- [Updating firmware](#updating-firmware)
+- [Configuring DNF](#configuring-dnf)
+- [Setting the hostname](#setting-the-hostname)
+- [Package layering](#package-layering)
+  * [Enabling RPM Fusion repositories](#enabling-rpm-fusion-repositories)
+  * [NVIDIA driver installation (with CUDA)](#nvidia-driver-installation--with-cuda-)
+  * [Other packages](#other-packages)
+- [Fish shell](#fish-shell)
+- [Configuring Flatpak](#configuring-flatpak)
+- [Firefox](#firefox)
+- [Toolbox](#toolbox)
+  * [Constructing a base image](#constructing-a-base-image)
+  * [Using the base image](#using-the-base-image)
+- [Installing Flatpak Apps](#installing-flatpak-apps)
+- [Installing Gnome Extensions](#installing-gnome-extensions)
+- [Adding aliases](#adding-aliases)
+- [Adding GPG- and SSH-key to GitHub](#adding-gpg--and-ssh-key-to-github)
+  * [GPG-key](#gpg-key)
+  * [SSH-key](#ssh-key)
+- [Enabling RTL88x2BU WiFi drivers](#enabling-rtl88x2bu-wifi-drivers)
+- [More resources](#more-resources)
 
 ## Updating the system
 
