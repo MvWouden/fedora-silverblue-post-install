@@ -37,6 +37,8 @@ To be genenerated...
 
 ## Installing Flatpak Apps
 
+## Installing Gnome Extensions
+
 ### Adding aliases
 
 ## Adding GPG- and SSH-key to GitHub
