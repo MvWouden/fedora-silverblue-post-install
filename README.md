@@ -96,7 +96,7 @@ systemctl reboot # to use new deployment image
 ### Other packages
 
 ```bash
-rpm-ostree install ulauncher neofetch lm_sensors dkms mscore-fonts-all gnome-tweaks
+rpm-ostree install ulauncher neofetch lm_sensors dkms mscore-fonts-all gnome-tweaks podman-compose
 systemctl reboot # to use new deployment image
 ```
 
