@@ -27,6 +27,7 @@ This repository was created to keep track of the installation and configuration 
 - [Adding GPG- and SSH-key to GitHub](#adding-gpg--and-ssh-key-to-github)
   * [GPG-key](#gpg-key)
   * [SSH-key](#ssh-key)
+- [Installing Docker](#installing-docker)
 - [Enabling RTL88x2BU WiFi drivers](#enabling-rtl88x2bu-wifi-drivers)
 - [More resources](#more-resources)
 
@@ -313,6 +314,38 @@ Lastly, enter the output of the following command in GitHub:
 
 ```bash
 cat ~/.ssh/id_ed25519.pub
+```
+
+## Installing Docker
+
+```bash
+sudo ostree remote add docker-ce https://download.docker.com/linux/fedora/docker-ce.repo
+rpm-ostree update
+rpm-ostree install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+systemctl reboot # to use new deployment image
+```
+Post installation:
+```bash
+sudo systemctl enable --now docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+systemctl reboot
+
+sudo chown root:docker /run/docker.sock
+sudo chown -R root:docker /run/docker
+sudo chown $USER:docker /run/docker.sock
+sudo chown -R $USER:docker /run/docker
+```
+
+Then, add the following line to the Fish configuration file (e.g. `~/.config/fish/config.fish`):
+
+```bash
+set -gx DOCKER_HOST unix:///run/docker.sock
+```
+
+Restart the terminal and run:
+```bash
+docker run hello-world
 ```
 
 ## Enabling RTL88x2BU WiFi drivers
