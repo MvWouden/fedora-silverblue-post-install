@@ -1,6 +1,6 @@
 # Fedora Silverblue - Post Installation
 
-A Fedora Silverblue (36) post installation guide.
+A Fedora Silverblue (36) post installation guide (slightly outdated by now).
 
 ## Motivation
 
